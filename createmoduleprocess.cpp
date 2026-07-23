@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2023 hors<horsicq@gmail.com>
+// Copyright (c) 2019-2026 hors<horsicq@gmail.com>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -129,7 +129,7 @@ void CreateModuleProcess::process()
                         listZipFiles.append(zipFileRecord);
                     }
                 } else {
-                    if (listRecords.at(i).sPath.toLower() == "x32") {
+                    if (listRecords.at(i).sPath.toLower() == "x32" || listRecords.at(i).sPath.toLower() == "x86") {
                         pMData->bIs32 = true;
                     }
 
